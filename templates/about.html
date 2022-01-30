@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block header_type %}sub-header{% endblock %}
+
+{% block title %}
+    <h1>About Us</h1>
+{% endblock %}
+
+{% block content %}
+
+    <!-- About Us Content -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum a mollitia nobis dolore
+                    dignissimos. Suscipit possimus esse aperiam nihil at accusantium, laboriosam, excepturi voluptas
+                    voluptates impedit mollitia sunt ratione!</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="{{ url_for('static', filename='images/about.jpg') }}">
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
